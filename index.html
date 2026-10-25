@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Application</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="brand-icon">✓</div>
+      <h1>To-Do List</h1>
+      <p>Plan · Do · Achieve</p>
+    </header>
+
+    <section class="content">
+      <form id="task-form" class="task-form">
+        <input id="task-input" type="text"
+          placeholder="Enter a new task..."
+          maxlength="150" required>
+        <button type="submit" class="add-btn">+ Add Task</button>
+      </form>
+
+      <div class="toolbar">
+        <div class="filters">
+          <button type="button" class="filter active" data-filter="all">All</button>
+          <button type="button" class="filter" data-filter="pending">Pending</button>
+          <button type="button" class="filter" data-filter="completed">Completed</button>
+        </div>
+        <div class="stats">
+          <span id="pending-count">0 pending</span>
+          <span id="completed-count">0 completed</span>
+        </div>
+      </div>
+
+      <ul id="task-list" class="task-list"></ul>
+      <p id="empty-message" class="empty-message">No tasks yet. Add your first task!</p>
+      <footer>Small steps make big goals! ✨</footer>
+    </section>
+  </main>
+</body>
+</html>
