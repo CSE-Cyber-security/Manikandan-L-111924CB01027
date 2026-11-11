@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Guardian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="shell">
+
+    <header class="top">
+        <div class="brand">◆ PASSWORD <b>GUARDIAN</b></div>
+        <span class="tag">LOCAL SECURITY TOOL</span>
+    </header>
+
+    <section class="hero">
+        <p class="eyebrow">PERSONAL SECURITY CHECK</p>
+        <h1>Build a stronger<br><em>digital defence.</em></h1>
+        <p class="sub">
+            Check password strength instantly.
+            Your password stays in this browser.
+        </p>
+    </section>
+
+    <section class="panel">
+
+        <label for="password">ENTER A PASSWORD</label>
+
+        <div class="input-wrap">
+            <input type="password" id="password"
+                placeholder="Type a sample password"
+                autocomplete="off">
+
+            <button id="toggle" type="button">SHOW</button>
+        </div>
+
+        <div class="meter-head">
+            <span>STRENGTH</span>
+            <strong id="strength">WAITING</strong>
+        </div>
+
+        <div class="meter">
+            <span id="bar"></span>
+        </div>
+
+        <div class="scoreline">
+            <span id="score">Score: 0 / 100</span>
+            <span id="length">0 characters</span>
+        </div>
+
+        <h2>Security Checklist</h2>
+
+        <ul class="checks">
+            <li id="c-length">At least 12 characters</li>
+            <li id="c-upper">Uppercase and lowercase letters</li>
+            <li id="c-number">At least one number</li>
+            <li id="c-symbol">At least one special character</li>
+            <li id="c-repeat">Avoid repeated characters</li>
+        </ul>
+
+        <div class="advice" id="advice">
+            Start typing to receive security recommendations.
+        </div>
+
+    </section>
+
+    <footer>
+        PASSWORD GUARDIAN • CLIENT-SIDE DEMO
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
